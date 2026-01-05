@@ -9,7 +9,7 @@ This project represents a redesigned frontend for a university website with a cl
 ## 🌐 Live Preview
 > (Optional)  
 Add GitHub Pages / Live link here  
-https://srikumar-pal.github.io/svu-website/
+[https://srikumar-pal.github.io/svu-website/](https://srikumar-pal.github.io/svu_website/)
 >
 
 ---
