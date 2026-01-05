@@ -1,0 +1,416 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ================= HEADER ================= */
+.top-header {
+    text-align: center;
+    padding: 25px 15px;
+    background-color: #f8f9fa;
+}
+
+.top-header h1 {
+    font-size: 36px;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+.top-header p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* ================= NAVBAR ================= */
+nav {
+    background-color: #00665a;
+    padding: 14px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav-links li a:hover {
+    color: #ffcc00;
+}
+
+/* ================= VIDEO HERO ================= */
+.video-hero {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.video-hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 1;
+}
+
+.video-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 51, 102, 0.65);
+    z-index: 2;
+}
+
+.video-content {
+    position: relative;
+    z-index: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.video-content h2 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.video-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    max-width: 600px;
+}
+
+.hero-btn {
+    background-color: #ffcc00;
+    color: #003366;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero-btn:hover {
+    background-color: #ffffff;
+}
+
+/* ================= WHY CHOOSE US ================= */
+.why-us {
+    background: #f4f6f9;
+    padding: 70px 40px;
+    text-align: center;
+}
+
+.why-us h2 {
+    font-size: 32px;
+    color: #003366;
+    margin-bottom: 40px;
+}
+
+.why-grid {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.why-card {
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    font-size: 16px;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+}
+
+/* ================= STATS ================= */
+.stats {
+    background: #003366;
+    padding: 70px 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    text-align: center;
+    color: white;
+}
+
+.stat-box {
+    background: rgba(255,255,255,0.08);
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+
+.stat-box h3 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.stat-box p {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+}
+/* ================= ABOUT PAGE ================= */
+.about-page {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.about-card {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.about-card h2 {
+    color: #003366;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.about-card p,
+.about-card li {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.about-card ul {
+    padding-left: 20px;
+}
+/* ================= PROGRAMS PAGE ================= */
+.programs-page {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.program-card {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-8px);
+}
+
+.program-card h2 {
+    color: #003366;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.program-card p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+/* ================= ADMISSION PAGE ================= */
+.admission-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 20px;
+}
+
+.admission-card {
+    width: 100%;
+    max-width: 480px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.admission-card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #003366;
+}
+
+.admission-card input,
+.admission-card select,
+.admission-card textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.admission-card button {
+    width: 100%;
+    background-color: #003366;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.admission-card button:hover {
+    background-color: #002244;
+}
+/* ================= CONTACT PAGE ================= */
+.contact-page {
+    max-width: 1100px;
+    margin: 70px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+.contact-card {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.contact-card h2 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.contact-card p {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.contact-card input,
+.contact-card textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-card button {
+    width: 100%;
+    background-color: #003366;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.contact-card button:hover {
+    background-color: #002244;
+}
+/* ===== NAVBAR WITH LOGO ===== */
+/* ===== NAVBAR ===== */
+.navbar {
+    background-color: #0b5d4b;   /* SVU green */
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ===== LOGO FIX ===== */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 42px;          /* 🔥 perfect size */
+    width: auto;
+    display: block;
+}
+
+.logo span {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* ===== NAV LINKS ===== */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+
+
